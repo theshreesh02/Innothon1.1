@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container" ></div>
+    <header class="header" style="position: fixed;">
+        <div class="logo"  style="border: 2px solid black; border-radius:10px;">Eco Nurture</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#Support">Support</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <button class="login-btn" onclick="openLoginPopup()" >Login</button>
+        </nav>
+        <!-- <button class="login-btn" onclick="openLoginPopup()">Login</button> -->
+        <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#about" onclick="toggleMenu()">About Us</a>
+            <a href="#contact" onclick="toggleMenu()">Contact Us</a> -->
+        </div>
+    </header>
+
+    <!-- for popping up -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeLoginPopup()">&times;</span>
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <table></table>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="taking-input" required>
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="taking-input" required>
+                <br><br>
+                <button ><a href="index.html">Login</a></button>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div >
+        <img src="logo1.png" alt="" id="logoimg">   
+        <h1 id="tag-line">Your Journey Begins With Us Today</h1>
+    </div>
+
+    <!-- <div id="statement">
+        <p id="st-line">We are committed to helping individuals and communities adopt sustainable management practices that balance environmental responsibility, social well-being, and economic growth. By promoting resource efficiency, ethical decision-making, and long-term resilience, we strive to create a healthier planet for future generations.</p>
+    </div> -->
+
+    <div id="info-container">
+        <div class="info-box">
+            MISSION : 
+            To empower organizations and communities with sustainable practices that balance economic growth, environmental protection, and social equity for a thriving future.</div>
+        <div class="info-box">VISION: 
+            To create a world where sustainable practices drive economic prosperity, environmental health, and social well-being for current and future generations.
+        </div>
+    </div>
+
+
+
+    <!-- Button to Open Chatbot -->
+    
+    
+    <div class="button-container">
+        <a href="help.html" class="image-button" target="_blank">
+            <img src="reqassi.jpg" alt="Request Assistance">
+        </a>
+
+        <a href="donate.html" class="image-button" target="_blank">
+            <img src="donate.jpg" alt="Request Assistance">  
+        </a>
+
+        <a href="support.html" class="image-button" target="_blank">
+            <img src="offsup.jpg" alt="Offer Support">
+        </a>
+    </div>
+
+    <div id="info-container">
+        <div class="info-box">
+            <h2>GOVT. AGENCIES OFFERING HELP :</h2> 
+            <ul>
+<li>NITI Aayog</li>
+<li>Ministry of Environment, Forest and Climate Change (MoEFCC)</li>
+<li>Ministry of Health and Family Welfare (MoHFW)</li>
+<li>Ministry of Rural Development (MoRD)</li>
+<li>Ministry of Housing and Urban Affairs (MoHUA)</li>
+<li>Ministry of New and Renewable Energy (MNRE)</li>
+<li>Ministry of Jal Shakti</li>
+<li>Ministry of Women and Child Development (MWCD)</li>
+<li>Central Pollution Control Board (CPCB)</li>
+<li>National Biodiversity Authority (NBA)</li>
+</ul>
+        </div>
+        <div class="info-box"><h2>NON GOVT. AGENCIES OFFERING HELP :</h2> 
+            <ul>
+                <li>United Nations Development Programme (UNDP) India</li>
+                <li>United Nations Environment Programme (UNEP) India</li>
+                <li>World Health Organization (WHO) India</li>
+                <li>World Bank India</li>
+                <li>Asian Development Bank (ADB) India</li>
+                <li>International Solar Alliance (ISA)</li>
+                <li>The Energy and Resources Institute (TERI)</li>
+                <li>Centre for Science and Environment (CSE)</li>
+                <li>Indian Green Building Council (IGBC)</li>
+                <li>Sustainable India Finance Facility (SIFF)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <footer style="background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;">
+        <div style="display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;">
+            <p>&copy; 2025 YourWebsite. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer> -->
+    <script src="script.js"></script>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="LMC9mRY8ttT1qmutWaU1M";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+</body>
+</html>

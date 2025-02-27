@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="supportstyle.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Support Sustainable Development</h2>
+        <form action="save.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+
+            <label for="support">How do you want to help?</label>
+            <select id="support" name="support" required>
+                <option value="">Select an option</option>
+                <option value="Donating Resources">Donating Resources</option>
+                <option value="Volunteering Time">Volunteering Time</option>
+                <option value="Providing Expertise">Providing Expertise</option>
+                <option value="Spreading Awareness">Spreading Awareness</option>
+            </select>
+
+            <button ><a href="support.html">Submit</a></button>
+        </form>
+    </div>
+</body>
+</html>
